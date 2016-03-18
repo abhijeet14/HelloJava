@@ -1,0 +1,56 @@
+<html lang="en" ng-app="firstApplication">
+   <head>
+     <link rel="stylesheet" href="styles/style.css">
+       <script src="lib/angular.js"></script>
+         <script src="lib/angular-animate.js"></script>
+         <script src="lib/angular-aria.js"></script>
+         <script src="lib/angular-resource.js"></script>
+         <script src="lib/angular-route.js"></script>
+         <script src="lib/angular-material.js"></script>
+
+      <script type="text/javascript" src="main.js">
+      </script>
+   </head>
+   <body ng-controller="MainCtrl" ng-cloak>
+
+       <h1>{{hello}}</h1>
+
+      <md-toolbar class="md-warn">
+         <div class="md-toolbar-tools">
+            <h2 class="md-flex">Material Design</h2>
+          </div>
+      </md-toolbar>
+
+    <md-tabs>
+      <md-tab label="one">
+        <md-content flex layout-padding>
+          <p>This is the First Tab</p>
+        </md-content>
+      </md-tab>
+      <md-tab label="two">
+        <md-content flex layout-padding>
+          <p>This is the Second Tab</p>
+        </md-content>
+      </md-tab>
+</md-tabs>
+
+<md-card>
+  <md-card-title>
+    <md-card-title-text>
+      <span>Hello!</span>
+    </md-card-title-text>
+  </md-card-title>
+  <md-card-content>
+    <p>
+      Whatever you do, do not click the button below.
+    </p>
+  </md-card-content>
+
+</md-card>
+      <md-content flex layout-padding>
+         <p>Happy Learnig</p>
+      </md-content>
+      <md-button class="md-primary md-raised" ng-click="releaseKraken()">Dont Click Me</md-button>
+
+   </body>
+</html>
